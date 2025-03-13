@@ -1,0 +1,51 @@
+.menu::before {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .menu::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -15px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 30px solid white;
+  }
+}
+
+.underline-hover {
+  position: relative;
+}
+
+
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.1s ease;
+  transform: translateX(-50%);
+  
+}
+
+.underline-hover:hover::after,
+.underline-hover.active::after {
+  width: 50%;
+}
+
+
+.underline-hover:hover,
+.underline-hover.active {
+  background: linear-gradient(90deg, #8e44ad, #e74c3c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
