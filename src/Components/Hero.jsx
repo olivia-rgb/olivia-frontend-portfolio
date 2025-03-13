@@ -71,22 +71,10 @@ const HeroSection = () => {
     </motion.div>
       </div>
       <nav className="text-white border-b pt-8 pb-2 font-black">
-  <ul className="flex flex-wrap justify-between">
+  <ul className="grid gap-3 grid-cols-2 lg:grid-cols-6 justify-between">
     <li>
-      <a className="flex items-center font-bold text-lg md:text-xl" href="#">
-        <span>Responsive Design</span>
-        <StarIcon className="text-purple-400" />
-      </a>
-    </li>
-    <li>
-      <a className="flex items-center font-bold text-lg md:text-xl" href="#">
-        <span>Interactive Design</span>
-        <StarIcon className="text-purple-400" />
-      </a>
-    </li>
-    <li>
-      <a className="flex items-center font-bold text-lg md:text-xl" href="#">
-        <span>Optimization</span>
+      <a className="flex items-start font-bold text-lg md:text-xl" href="#">
+        <p>Responsive</p>
         <StarIcon className="text-purple-400" />
       </a>
     </li>
@@ -98,7 +86,25 @@ const HeroSection = () => {
     </li>
     <li>
       <a className="flex items-center font-bold text-lg md:text-xl" href="#">
+        <span>Optimization</span>
+        <StarIcon className="text-purple-400" />
+      </a>
+    </li>
+    <li>
+      <a className="flex items-center font-bold text-lg md:text-xl" href="#">
+        <span>Interactive </span>
+        <StarIcon className="text-purple-400" />
+      </a>
+    </li>
+    <li>
+      <a className="flex items-center font-bold text-lg md:text-xl" href="#">
         <span>Figma Design</span>
+        <StarIcon className="text-purple-400" />
+      </a>
+    </li>
+    <li>
+      <a className="flex items-center font-bold text-lg md:text-xl" href="#">
+        <span>Web Animations</span>
         <StarIcon className="text-purple-400" />
       </a>
     </li>
