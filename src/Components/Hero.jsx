@@ -104,7 +104,7 @@ const HeroSection = () => {
     </li>
     <li>
       <a className="flex items-center font-bold text-lg md:text-xl" href="#">
-        <span>Web Animations</span>
+        <span>Animations</span>
         <StarIcon className="text-purple-400" />
       </a>
     </li>
